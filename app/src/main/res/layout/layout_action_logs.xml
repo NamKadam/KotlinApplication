@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/elementMarginSmall">
+
+        <ImageView
+            android:id="@+id/img_doc_list"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_doc_list"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action Date"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvActionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="sans-serif"
+                    android:text="12/02/2017 12:38:09" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Work Date"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_workDt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20-12-19"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/elementMarginSmall"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action By"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tvActionBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pune solar"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/text_color"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/tv_statusLogs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_color"
+                    android:fontFamily="sans-serif"/>
+            </LinearLayout>
+           
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/elementMarginSmall"
+            android:text="Comment"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tvCommentLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/elementMarginSmall"
+            android:text="Comment"
+            android:textSize="14sp"
+            android:textColor="@color/text_color"
+            android:fontFamily="sans-serif"/>
+        <LinearLayout
+            android:id="@+id/lin_main_doc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_5"
+            android:padding="@dimen/size_8"
+            android:visibility="gone"
+
+            android:background="@drawable/drawable_editext">
+            <LinearLayout
+                android:id="@+id/linear_docList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_msg_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="No Data Available"
+                android:textColor="@color/colorBlack"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear_search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_margin="@dimen/size_10"
+        android:padding="@dimen/elementMarginSmall">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From Date"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:id="@+id/linear_frmdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_editext">
+                <TextView
+                    android:id="@+id/txtFrmDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="DD/MM/YYY" />
+
+                <ImageView
+                    android:id="@+id/img_frmDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To Date"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:id="@+id/linear_todate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_editext">
+                <TextView
+                    android:id="@+id/txtToDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:padding="8dp"
+                    android:text="DD/MM/YYY" />
+
+                <ImageView
+                    android:id="@+id/img_ToDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_calendar"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_8"
+                android:background="@drawable/drawable_editext">
+                <Spinner
+                    android:id="@+id/spnr_city_workList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/size_8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Route"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/size_8"
+                android:background="@drawable/drawable_editext">
+                <Spinner
+                    android:id="@+id/spnr_route_workList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_catProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/elementPaddingSmall"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_8"
+                    android:background="@drawable/drawable_editext">
+                    <Spinner
+                        android:id="@+id/spnr_cate_workList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/size_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Product"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_8"
+                    android:background="@drawable/drawable_editext">
+                    <Spinner
+                        android:id="@+id/spnr_prod_workList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/size_30"
+            android:layout_marginBottom="@dimen/size_10">
+            <Button
+                android:id="@+id/btn_srch_work"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:text="Search"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:background="@drawable/drawable_btn"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorWhite"/>
+            <Button
+                android:id="@+id/btn_download_work"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginLeft="@dimen/size_5"
+                android:text="Download Report"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/drawable_btn"
+                android:textColor="@color/colorWhite"/>
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginLeft="@dimen/size_5"
+                android:text="Cancel"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/drawable_btn"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

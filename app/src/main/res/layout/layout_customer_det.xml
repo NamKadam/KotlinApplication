@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:cardElevation="@dimen/size_5"-->
+    <!--        android:layout_margin="@dimen/size_5"-->
+    <!--        app:cardCornerRadius="@dimen/size_5">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/size_8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/txtName_work1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Namrata"
+                android:layout_marginLeft="8dp"
+                android:textSize="18sp"
+                android:layout_weight="0.2"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@string/str_font_bold"/>
+
+            <TextView
+                android:id="@+id/txt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pune"
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp"
+                android:layout_weight="0.9"
+                android:textColor="@color/light_white"
+                android:fontFamily="@string/str_font_bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_comp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pune"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="@dimen/size_5"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_weight="0.9"
+            android:textStyle="bold"
+            android:textColor="@color/light_white"
+            android:fontFamily="@string/str_font_bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rel_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgmob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/ic_callsvg"/>
+                <TextView
+                    android:id="@+id/txtMob_work1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/str_font_regular"
+                    android:text="9730259440"
+                    android:layout_toRightOf="@id/imgmob"
+                    android:textColor="@color/light_white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="@dimen/size_5"/>
+                <RelativeLayout
+                    android:id="@+id/rel_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtMob_work1"
+                    android:layout_marginLeft="@dimen/size_15"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:id="@+id/imgmail"
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:src="@drawable/ic_mail"
+                        android:layout_marginTop="5dp"                        />
+
+                    <TextView
+                        android:id="@+id/txtEmail_work1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="namrata@gmail.com"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="@dimen/size_5"
+                        android:layout_toRightOf="@id/imgmail"
+                        android:textColor="@color/light_white"
+                        android:fontFamily="@string/str_font_regular"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtaddress_work1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_8"
+                android:fontFamily="@string/str_font_regular"
+                android:text="fff"
+                android:textColor="@color/light_white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtdate_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/size_5"
+                android:fontFamily="@string/str_font_regular"
+                android:text="ffff"
+                android:textColor="@color/light_white"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

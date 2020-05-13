@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@color/dialogbg"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/size_8"
+            android:layout_marginRight="@dimen/size_8"
+            android:minHeight="@dimen/size_100"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/size_10"
+            app:cardElevation="2dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/size_15"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|center_vertical"
+                    android:text="App Update Available"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:padding="8dp"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@string/str_font_bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/size_10"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/str_update"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:padding="@dimen/size_8"
+                    android:textStyle="normal" />
+
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnupdate"
+                    android:minWidth="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_40"
+                    android:layout_gravity="right"
+                    android:layout_margin="@dimen/size_10"
+                    android:background="@drawable/drawable_btn"
+                    android:text="Update"
+                    android:paddingLeft="@dimen/size_15"
+                    android:paddingRight="@dimen/size_15"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

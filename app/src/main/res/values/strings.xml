@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Solonox Kotlin</string>
+    <string name="loading">Loading&#8230;&#8230;&#8230;</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="today_work_list">Today`s Work List</string>
+    <string name="closed_work_list">Closed</string>
+    <string name="reschedule_work_list">Re-Schedule</string>
+    <string name="calls_list">Calls List</string>
+    <string name="customer_management">Customer Management</string>
+    <string name="str_update">We have fixed some issues and added some cool features in this update!</string>
+
+
+    <!--added by ND-->
+    <string name="view_update_work">Work Details</string>
+
+    <string-array name="str_city">
+        <item>Select City</item>
+    </string-array>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_work_update">ActivityWorkUpdate</string>
+    <string name="title_activity_add_create_call">ActivityAddNewCall</string>
+
+    <string name="city">Please select City</string>
+    <string name="route">Please select Route</string>
+    <string name="category">Please select Category</string>
+    <string name="product">Please select Product</string>
+    <string name="date">Please select date</string>
+    <string name="frmdate">Please select From date</string>
+    <string name="todate">Please select  To date</string>
+    <string name="servRepFreq">Please select Service Repeat Frequency</string>
+    <string name="selType">Please select Type</string>
+
+    <!--customerMan-->
+    <string name="Name">Please enter name</string>
+    <string name="Mob">Please enter mobile</string>
+    <string name="MobErr">Please enter valid mobile no.</string>
+
+    <string name="TypeOfCust">Please select type of customer</string>
+    <string name="Address">Please enter address</string>
+    <string name="status">Please select status</string>
+
+    <string-array name="str_array_option">
+        <item>From Camera</item>
+        <item>From Gallery</item>
+        <item>Cancel</item>
+    </string-array>
+
+    <!--for fonts-->
+    <!--for fonts-->
+    <string name="str_font_light">Raleway-Light.otf</string>
+    <string name="str_font_bold">Raleway-Bold.otf</string>
+    <string name="str_font_regular">Raleway-Regular.otf</string>
+    <string name="str_font_medium">Raleway-Medium.otf</string>
+
+    <string name="Status">Status</string>
+    <string name="WorkDet">Details</string>
+    <string name="ActionLogs">Action Logs</string>
+    <string name="Assign">Assignment</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_collapsible">ActivityCollapsible</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+</resources>
